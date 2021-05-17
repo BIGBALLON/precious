@@ -1,0 +1,59 @@
+<div class="nav">
+    <ul id="menu-menu" class="menu">
+        <% for (var i in theme.menu){ %>
+            <li class="<%- theme.menu[i].indexOf('http') > -1 ? " " : " pview" %> menu-item menu-item-type-post_type
+                menu-item-object-page">
+                <%- link_to(theme.menu[i].lastIndexOf('/')> 0 ? theme.menu[i] : theme.menu[i] + '/', i, {external:
+                    true})%>
+            </li>
+            <%}%>
+    </ul>
+    <span class="target"></span>
+    <center>
+        <div class="hitokoto">
+            <span class="typed" id="hitokoto" data-st="<%=theme.hitokoto%>"></span>
+        </div>
+        <br>
+        <img src="img/rz-ht.png" alt="My Love" width="512">
+        <br>
+        <h3>We have fallen in love for</h3>
+        <div class="timer">
+            <b id="d"></b> Days <b id="h"></b> Hours <b id="m"></b> Minutes <b id="s"></b> Seconds
+        </div>
+</div>
+
+<script>
+    function timer() {
+        var start = new Date('2021/03/20 00:00:00');
+        var t = new Date() - start;
+        var h = ~~(t / 1000 / 60 / 60 % 24);
+        if (h < 10) {
+            h = "0" + h;
+        }
+        var m = ~~(t / 1000 / 60 % 60);
+        if (m < 10) {
+            m = "0" + m;
+        }
+
+        var s = ~~(t / 1000 % 60);
+        if (s < 10) {
+            s = "0" + s;
+        }
+        document.getElementById('d').innerHTML = ~~(t / 1000 / 60 / 60 / 24);
+        document.getElementById('h').innerHTML = h;
+        document.getElementById('m').innerHTML = m;
+        document.getElementById('s').innerHTML = s;
+    }
+    timer();
+    setInterval(timer, 1000);
+</script>
+</center>
+
+<p class="footerlinks">
+    <a href="#" class="iconfont icon-null"></a>
+    <% for (var i in theme.links){ %>
+        <%- link_to(theme.links[i],' ',{external: true ,class: ' iconfont icon-'+i,title:i})%>
+            <%}%>
+                <a href="#" class="iconfont icon-null"></a>
+</p>
+</div>
