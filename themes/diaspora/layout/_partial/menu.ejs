@@ -1,20 +1,11 @@
 <div class="nav">
-    <ul id="menu-menu" class="menu">
-        <% for (var i in theme.menu){ %>
-            <li class="<%- theme.menu[i].indexOf('http') > -1 ? " " : " pview" %> menu-item menu-item-type-post_type
-                menu-item-object-page">
-                <%- link_to(theme.menu[i].lastIndexOf('/')> 0 ? theme.menu[i] : theme.menu[i] + '/', i, {external:
-                    true})%>
-            </li>
-            <%}%>
-    </ul>
     <span class="target"></span>
     <center>
         <div class="hitokoto">
             <span class="typed" id="hitokoto" data-st="<%=theme.hitokoto%>"></span>
         </div>
         <br>
-        <img src="img/rz-ht.png" alt="My Love" width="512">
+        <img src="img/rz-ht.png" alt="My Love" width="520">
         <br>
         <h3>We have fallen in love for</h3>
         <div class="timer">
