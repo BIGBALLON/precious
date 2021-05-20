@@ -2,38 +2,51 @@
 title: 伍贰零 快樂
 date: 2021-05-20 20:13:14
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
-## Quick Start
+> 女曰雞鳴，士曰昧旦。  
+> 子興視夜，明星有爛。  
+> 將翱將翔，弋鳧與雁。 
+> 
+> 弋言加之，與子宜之，  
+> 宜言飲酒，與子偕老，  
+> 琴瑟在御，莫不靜好。  
+> 
+> 知子之來之，雜珮以贈之。  
+> 知子之順之，雜珮以問之。  
+> 知子之好之，雜珮以報之。  
 
-### Create a new post
 
-``` bash
-$ hexo new "My New Post"
-```
+## 相識·相知
 
-More info: [Writing](https://hexo.io/docs/writing.html)
 
-### Run server
+## 相愛·相伴
 
-``` bash
-$ hexo server
-```
 
-More info: [Server](https://hexo.io/docs/server.html)
-
-### Generate static files
-
-``` bash
-$ hexo generate
-```
-
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
 
 ``` bash
-$ hexo deploy
+    #include<bits/stdc++.h>
+int main() {  int A=43,B=A/2, 
+C=B/2,x,y,i=B,j=-C;for(y=0;y<B; 
+j=(++y)-(C+C/8)) {for(x=0; x<A;i= 
+abs((++x)-B)+j){std::cout<<((i*i 
+/2+j*j<(C*C*2)/3)?"*":" ");} 
+    std::cout<<std::endl 
+        ;}return  
+            0;} 
 ```
 
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$$ (x^2 + (9/4)y^2 + z^2 - 1)^3 - x^2z^3 - (9/80)y^2z^3 = 0 $$
